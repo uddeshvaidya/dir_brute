@@ -35,7 +35,7 @@ def process_directory(base_url, directory_queue):
         directory_queue.task_done()
 
 def main():
-    base_url = input("Enter the base URL or IP: ")
+    base_url = input("Enter the base URL: ")
     wordlist_path = os.path.join(os.path.dirname(__file__), "common.txt")
 
     directory_queue = queue.Queue()
