@@ -7,6 +7,16 @@ import argparse
 import re
 
 init(autoreset=True)  # Initialize colorama for colored output
+def print_colored_logo():
+    logo = (
+        f"{Fore.CYAN}██████╗░██╗██████╗░██████╗░██████╗░██╗░░░██╗████████╗███████╗\n"
+        f"{Fore.CYAN}██╔══██╗██║██╔══██╗██╔══██╗██╔══██╗██║░░░██║╚══██╔══╝██╔════╝\n"
+        f"{Fore.CYAN}██║░░██║██║██████╔╝██████╦╝██████╔╝██║░░░██║░░░██║░░░█████╗░░\n"
+        f"{Fore.CYAN}██║░░██║██║██╔══██╗██╔══██╗██╔══██╗██║░░░██║░░░██║░░░██╔══╝░░\n"
+        f"{Fore.CYAN}██████╔╝██║██║░░██║██████╦╝██║░░██║╚██████╔╝░░░██║░░░███████╗\n"
+        f"{Fore.CYAN}╚═════╝░╚═╝╚═╝░░╚═╝╚═════╝░╚═╝░░╚═╝░╚═════╝░░░░╚═╝░░░╚══════╝{Style.RESET_ALL}"
+    )
+    print(logo)
 
 THREAD_COUNT = 10  # Number of threads for parallel requests
 
