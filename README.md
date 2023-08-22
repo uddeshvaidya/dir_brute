@@ -29,4 +29,5 @@ Contributions are welcome! If you find any issues or have ideas for improvements
 # License
 This project is licensed under the GNU General Public License (GNU GPL). See LICENSE for details.
 
-# Disclaimer: This script is intended for educational and ethical purposes. Only use it on systems you have permission to test. Unauthorized use is not encouraged.
+# Disclaimer: 
+This script is intended for educational and ethical purposes. Only use it on systems you have permission to test. Unauthorized use is not encouraged.
