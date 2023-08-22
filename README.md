@@ -2,20 +2,20 @@
 dir_brute is a Python script for parallel directory enumeration on web servers. It uses a wordlist of common directory names to check the existence of directories on a given server. The script makes HTTP requests in parallel using multiple threads and provides colorful output based on the HTTP response status.
 
 # Usage
-Clone the repository:
-git clone https://github.com/uddeshvaidya/dir_brute.git
-Change the Directory
-cd dir_brute
-Install the required Python packages:
-pip install requests colorama
-Run the script:
-python dir_brute.py -u <base_url> -sw -ew -bw
-Flags:
-  -u, --url    Base URL of the target website (e.g., https://example.com)
-  -sw          Use small.txt wordlist
-  -ew          Use extensions.txt wordlist
-  -bw          Use big.txt wordlist
-  -h, --help   Show help message and exit
+Clone the repository: <br>
+git clone https://github.com/uddeshvaidya/dir_brute.git <br> <br>
+Change the Directory <br>
+cd dir_brute <br> <br>
+Install the required Python packages: <br>
+pip install requests colorama <br> <br>
+Run the script: <br>
+python3 dir_brute.py -u <base_url> -sw -ew -bw <br> <br>
+Flags: <br>
+  -u, --url    Base URL of the target website (e.g., https://example.com) <br>
+  -sw          Use small.txt wordlist <br>
+  -ew          Use extensions.txt wordlist <br>
+  -bw          Use big.txt wordlist <br>
+  -h, --help   Show help message and exit <br>
 
 # Wordlists:
 The wordlists (small.txt, extensions.txt, big.txt, common.txt) should be placed in the 'wordlist' folder next to the 'dir_brute.py' script.
