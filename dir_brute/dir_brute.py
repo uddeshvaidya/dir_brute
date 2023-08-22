@@ -17,6 +17,7 @@ def print_colored_logo():
         f"{Fore.CYAN}╚═════╝░╚═╝╚═╝░░╚═╝╚═════╝░╚═╝░░╚═╝░╚═════╝░░░░╚═╝░░░╚══════╝{Style.RESET_ALL}"
     )
     print(logo)
+    print("\n")
 
 THREAD_COUNT = 10  # Number of threads for parallel requests
 
@@ -47,6 +48,7 @@ def process_directory(base_url, directory_queue):
         directory_queue.task_done()
 
 def main():
+    print_colored_logo()
     parser = argparse.ArgumentParser(description="Directory brute-forcing tool")
     parser.add_argument("-u", "--url", required=True, help="Base URL")
     parser.add_argument("-sw", "--small-wordlist", action='store_true', help="Use small.txt wordlist")
